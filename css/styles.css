@@ -16,7 +16,6 @@ ol {
     list-style: none;
 }
 
-
 /* ------ HEADER ------ */
 
 .logo-principal img {
@@ -47,6 +46,34 @@ ol {
 .titulo-principal {
     display: none;
 }
+
+/* ------ MAIN ------ */
+
+/* .-.-.-.-.-.-.-.--. */
+
+/* ------ INDEX ------ */
+
+.encabezado__index {
+    background-image: url(../imgs/imagen-fondo-index-header.jpg);
+    background-color: #041f8dde;
+    height: 55vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.encabezado__texto {
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: #0000006b;
+    color: rgb(255, 255, 255);
+    width: 60vw;
+    border-radius: 20px;
+    padding: 8px;
+}
+
 
 
 /* ------ FOOTER ------ */
