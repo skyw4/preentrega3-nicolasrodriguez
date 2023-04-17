@@ -18,18 +18,28 @@ ol {
 
 /* ------ HEADER ------ */
 
-.logo-principal img {
+.logo-principal{
+    display: flex;
+    justify-content: center;
+}
+
+.logo-principal img{
     width: 100%;
+}
+
+.navbar{
+background-color: #EAE7DD;
 }
 
 .list-item {
     padding: 7px;
     margin: 5px;
     font-size: 0.9rem;
+    border-radius: 10px;
 }
 
 .list-item:hover {
-    background-color: #000000ec;
+    background-color: #99775C;
     border-radius: 12px;
     }
 
@@ -47,19 +57,23 @@ ol {
     display: none;
 }
 
+@media (min-width: 600px){
+
+}
 /* ------ MAIN ------ */
 
 /* .-.-.-.-.-.-.-.--. */
 
 /* ------ INDEX ------ */
 
-.encabezado__index {
+.index__encabezado {
     background-image: url(../imgs/imagen-fondo-index-header.jpg);
     background-color: #041f8dde;
-    height: 55vh;
+    height: 45vh;
     background-position: center;
     background-size: cover;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -69,11 +83,40 @@ ol {
     text-align: center;
     background-color: #0000006b;
     color: rgb(255, 255, 255);
-    width: 60vw;
+    width: 70vw;
     border-radius: 20px;
     padding: 8px;
 }
 
+.btn{
+background-color: #EAE7DD;    
+padding:7px;
+margin-top: 20px;
+border-radius: 7px;
+border: solid #EAE7DD;
+}
+
+/* .btn:hover{
+background-color: #000000;
+border: solid #000000;
+color: white;
+} */
+@media (max-width: 378px){
+    .encabezado__texto{
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 1024px){
+.index__encabezado{
+    height: 40vh;
+}
+
+    .encabezado__texto{
+width: 60vw;
+font-size: 1.5rem;
+}
+}
 
 
 /* ------ FOOTER ------ */
@@ -91,4 +134,9 @@ ol {
     justify-content: space-evenly;
     font-size: 1.5rem;
     padding: 0.7em;
+    background-color: #EAE7DD;
+    color: #99775C;
+}
+.icon:hover{
+    color: #99775C
 }
