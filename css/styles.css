@@ -97,11 +97,8 @@ ol {
     border: solid #EAE7DD;
 }
 
-/* .btn:hover{
-background-color: #000000;
-border: solid #000000;
-color: white;
-} */
+
+
 @media (max-width: 378px) {
     .encabezado__texto {
         font-size: 1.1rem;
@@ -119,6 +116,175 @@ color: white;
     }
 }
 
+.catalogo__titulo {
+    background-color: #EAE7DD;
+    font-size: 2rem;
+    text-align: center;
+    padding: 15px;
+    color: black;
+    width: 100%;
+}
+
+.subtitulo-productos {
+    font-size: 1.8rem;
+    padding: 15px;
+    background-color: #000000;
+    text-align: center;
+    color: #EAE7DD;
+}
+.catalogo {
+    background-image: url(../imgs/imagen-fondo-index.jpg);
+    background-color: #EAE7DD;
+    background-position: center;
+    background-size: cover;
+}
+
+.productos {
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    background-color: #99775C;
+    border-radius: 40px;
+    border: solid 2px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.producto-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.producto-img {
+    width: 250px;
+    border-radius: 15px;
+}
+
+.productos-flex {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    padding: 40px;
+}
+
+
+/* ------ CONSTRUCCION ------ */
+
+.catalogo__titulo-celeste{
+    background-color: #48706b ;
+    font-size: 1.8rem;   
+    text-align: center;
+    padding: 15px;
+    color: black;
+    width: 100%;
+}
+
+.catalogo-construccion {
+    background-color: #d3cebf;
+    background-position: center;
+    background-size: cover;
+}
+
+.subtitulo-construccion {
+    font-size: 1.8rem;
+    padding: 15px;
+    background-color: #000000;
+    text-align: center;
+    color: #EAE7DD;
+}
+
+.contruccion-flex {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+}
+
+.productos-construccion {
+    padding: 20px;
+    width: 300px;
+    background-color: #48706b;
+    border-radius: 50px;
+    border: solid 2px black;
+    margin: 20px;
+}
+
+.productos-construccion a {
+    color: white;
+}
+
+/* ------ CERAMICAS ------ */
+.catalogo-ceramicas {
+    background-image: url(../imgs/imagen-fondo2.jpg);
+    background-position: center;
+    background-size:cover;
+}
+
+.productos-ceramicas {
+    padding: 20px;
+    width: 350px;
+    background-color: #3161499a;
+    border-radius: 50px;
+    border: solid 2px black;
+    margin: 20px;
+}
+
+.productos-ceramicas a {
+    color: white;
+}
+
+.subtitulo-ceramicas {
+    font-size: 1.8rem;
+    padding: 15px;
+    background-color: rgba(153, 202, 168, 0.705);
+    text-align: center;
+}
+
+.ceramicas-flex {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+}
+
+
+/* ------ MUEBLES ------ */
+.catalogo-muebles {
+    background-image: url(../imgs/imagen-fondo3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.subtitulo-muebles {
+    font-size: 1.8rem;
+    padding: 15px;
+    background-color: rgba(122, 83, 9, 0.705);
+    text-align: center;
+}
+
+.productos-muebles {
+    padding: 20px;
+    width: 350px;
+    background-color: #c2671d7e;
+    border-radius: 50px;
+    border: solid 2px black;
+    margin: 20px;
+}
+
+.productos-muebles a {
+    color: white;
+}
+
+.producto-img-muebles {
+    width: 250px;
+    height: 150px;
+}
+
+.muebles-flex {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+}
 
 
 
