@@ -18,17 +18,17 @@ ol {
 
 /* ------ HEADER ------ */
 
-.logo-principal{
+.logo-principal {
     display: flex;
     justify-content: center;
 }
 
-.logo-principal img{
+.logo-principal img {
     width: 100%;
 }
 
-.navbar{
-background-color: #EAE7DD;
+.navbar {
+    background-color: #EAE7DD;
 }
 
 .list-item {
@@ -41,7 +41,7 @@ background-color: #EAE7DD;
 .list-item:hover {
     background-color: #99775C;
     border-radius: 12px;
-    }
+}
 
 .list-item a:hover {
     color: white;
@@ -57,9 +57,10 @@ background-color: #EAE7DD;
     display: none;
 }
 
-@media (min-width: 600px){
+/* @media (min-width: 600px) {
 
-}
+} */
+
 /* ------ MAIN ------ */
 
 /* .-.-.-.-.-.-.-.--. */
@@ -88,12 +89,12 @@ background-color: #EAE7DD;
     padding: 8px;
 }
 
-.btn{
-background-color: #EAE7DD;    
-padding:7px;
-margin-top: 20px;
-border-radius: 7px;
-border: solid #EAE7DD;
+.btn {
+    background-color: #EAE7DD;
+    padding: 7px;
+    margin-top: 20px;
+    border-radius: 7px;
+    border: solid #EAE7DD;
 }
 
 /* .btn:hover{
@@ -101,23 +102,100 @@ background-color: #000000;
 border: solid #000000;
 color: white;
 } */
-@media (max-width: 378px){
-    .encabezado__texto{
+@media (max-width: 378px) {
+    .encabezado__texto {
         font-size: 1.1rem;
     }
 }
 
-@media (min-width: 1024px){
-.index__encabezado{
-    height: 40vh;
+@media (min-width: 1024px) {
+    .index__encabezado {
+        height: 40vh;
+    }
+
+    .encabezado__texto {
+        width: 60vw;
+        font-size: 1.5rem;
+    }
 }
 
-    .encabezado__texto{
-width: 60vw;
-font-size: 1.5rem;
-}
+
+
+
+/* ------ SECCIÓN CONTACTO ------ */
+
+.contacto-titulo {
+    text-align: center;
+    padding: 25px;
 }
 
+.contacto-p {
+    text-align: center;
+    width: 80vw;
+    margin: auto;
+}
+
+.icon-card {
+    display: flex;
+    align-items: center;
+
+    height: 65px;
+    margin: 5px 0px;
+}
+
+.icon-container {
+    background-color: #EAE7DD;
+    border-radius: 15px;
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-container i {
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+}
+
+.card-text {
+    font-size: 1rem;
+    padding: 0.5em;
+}
+
+.redes-sociales {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input {
+    display: block;
+    width: 80vw;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: 10px;
+
+}
+
+.form-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+form div .btn {
+    margin-bottom: 15px;
+    padding: .6em 5rem;
+    margin-top: 0;
+}
+
+form div .btn:hover {
+    background-color: #99775C;
+    border-radius: 12px;
+}
 
 /* ------ FOOTER ------ */
 
@@ -137,6 +215,7 @@ font-size: 1.5rem;
     background-color: #EAE7DD;
     color: #99775C;
 }
-.icon:hover{
+
+.icon:hover {
     color: #99775C
 }
