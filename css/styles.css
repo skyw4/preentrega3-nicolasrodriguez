@@ -170,7 +170,7 @@ ol {
 }
 
 
-/* ------ CONSTRUCCION ------ */
+/* ------ CATALOGO ------ */
 
 .catalogo__titulo-celeste{
     background-color: #48706b ;
@@ -181,13 +181,11 @@ ol {
     width: 100%;
 }
 
-.catalogo-construccion {
+.catalogo-fondo {
     background-color: #d3cebf;
-    background-position: center;
-    background-size: cover;
 }
 
-.subtitulo-construccion {
+.subtitulo-catalogos {
     font-size: 1.8rem;
     padding: 15px;
     background-color: #000000;
@@ -195,13 +193,7 @@ ol {
     color: #EAE7DD;
 }
 
-.contruccion-flex {
-    display: flex;
-    flex-flow: wrap;
-    justify-content: space-evenly;
-}
-
-.productos-construccion {
+.catalogo-productos {
     padding: 20px;
     width: 300px;
     background-color: #48706b;
@@ -210,82 +202,21 @@ ol {
     margin: 20px;
 }
 
-.productos-construccion a {
-    color: white;
-}
-
-/* ------ CERAMICAS ------ */
-.catalogo-ceramicas {
-    background-image: url(../imgs/imagen-fondo2.jpg);
-    background-position: center;
-    background-size:cover;
-}
-
-.productos-ceramicas {
-    padding: 20px;
-    width: 350px;
-    background-color: #3161499a;
-    border-radius: 50px;
-    border: solid 2px black;
-    margin: 20px;
-}
-
-.productos-ceramicas a {
-    color: white;
-}
-
-.subtitulo-ceramicas {
-    font-size: 1.8rem;
-    padding: 15px;
-    background-color: rgba(153, 202, 168, 0.705);
-    text-align: center;
-}
-
-.ceramicas-flex {
+.catalogo-flex {
     display: flex;
     flex-flow: wrap;
     justify-content: space-evenly;
 }
 
-
-/* ------ MUEBLES ------ */
-.catalogo-muebles {
-    background-image: url(../imgs/imagen-fondo3.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-.subtitulo-muebles {
-    font-size: 1.8rem;
-    padding: 15px;
-    background-color: rgba(122, 83, 9, 0.705);
-    text-align: center;
-}
-
-.productos-muebles {
-    padding: 20px;
-    width: 350px;
-    background-color: #c2671d7e;
-    border-radius: 50px;
-    border: solid 2px black;
-    margin: 20px;
-}
-
-.productos-muebles a {
+.catalogo-productos a {
     color: white;
 }
 
 .producto-img-muebles {
     width: 250px;
     height: 150px;
+    border-radius: 15px;
 }
-
-.muebles-flex {
-    display: flex;
-    flex-flow: wrap;
-    justify-content: space-evenly;
-}
-
 
 
 /* ------ SECCIÓN CONTACTO ------ */
