@@ -1,0 +1,41 @@
+.header__logo {
+    display: flex;
+    justify-content: center;
+
+& img{
+    width: 100%;
+}
+}
+
+.header__title {
+    display: none;
+}
+
+.nav{
+    background-color: #EAE7DD;
+
+&__list{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+&__item{
+    padding: 7px;
+    margin: 5px;
+    font-size: 0.9rem;
+    border-radius: 10px;
+
+    &:hover{
+        background-color: #99775C;
+        border-radius: 12px;
+    }
+
+    & a:hover{
+        color: #EAE7DD;
+    }
+}
+}
+
+/* @media (min-width: 600px) {
+} */

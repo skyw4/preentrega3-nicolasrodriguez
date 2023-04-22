@@ -1,0 +1,22 @@
+.footer {
+    &__title {
+        background-color: black;
+        color: white;
+        text-align: center;
+        font-size: 1rem;
+        padding: 0.8em;
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 1.5rem;
+        padding: 0.7em;
+        background-color: #EAE7DD;
+        color: #99775C;
+    }
+}
+
+.icon:hover {
+    color: #99775C
+}
