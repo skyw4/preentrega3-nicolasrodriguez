@@ -121,7 +121,7 @@ ul, ol {
 }
 
 .encabezado {
-  background-image: url(../../imgs/imagen-fondo-index-header.jpg);
+  background-image: url(../imgs/imagen-fondo-index-header.jpg);
   background-color: rgba(4, 31, 141, 0.8705882353);
   height: 45vh;
   background-position: center;
@@ -154,12 +154,6 @@ ul, ol {
     width: 60vw;
     font-size: 1.5rem;
   }
-}
-.catalogo {
-  background-image: url(../imgs/imagen-fondo-index.jpg);
-  background-color: #EAE7DD;
-  background-position: center;
-  background-size: cover;
 }
 .catalogo__title {
   background-color: #EAE7DD;
@@ -209,8 +203,26 @@ ul, ol {
   border-radius: 15px;
 }
 
-.catalogo__title--blue {
+.catalogo__title--construccion {
   background-color: #48706b;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 15px;
+  color: black;
+  width: 100%;
+}
+
+.catalogo__title--ceramicas {
+  background-color: #704948;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 15px;
+  color: black;
+  width: 100%;
+}
+
+.catalogo__title--muebles {
+  background-color: #614870;
   font-size: 1.8rem;
   text-align: center;
   padding: 15px;
@@ -227,29 +239,49 @@ ul, ol {
   margin: 20px;
 }
 
+.productos__ceramicas {
+  padding: 20px;
+  width: 300px;
+  background-color: #704948;
+  border-radius: 50px;
+  border: solid 2px black;
+  margin: 20px;
+}
+
+.productos__muebles {
+  padding: 20px;
+  width: 300px;
+  background-color: #614870;
+  border-radius: 50px;
+  border: solid 2px black;
+  margin: 20px;
+}
+
 .productos__body a {
   color: white;
 }
 
-.contacto-titulo {
+.contacto__title {
   text-align: center;
   padding: 25px;
 }
-
-.contacto-p {
+.contacto__text {
   text-align: center;
   width: 80vw;
   margin: auto;
 }
-
-.icon-card {
+.contacto__redes {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.contacto__redes--card {
   display: flex;
   align-items: center;
   height: 65px;
   margin: 5px 0px;
 }
-
-.icon-container {
+.contacto__redes--icon {
   background-color: #EAE7DD;
   border-radius: 15px;
   width: 45px;
@@ -258,21 +290,30 @@ ul, ol {
   justify-content: center;
   align-items: center;
 }
-
-.icon-container i {
+.contacto__redes--icon i {
   font-size: 1.2rem;
   color: rgb(0, 0, 0);
 }
 
-.card-text {
+.icon__info {
   font-size: 1rem;
   padding: 0.5em;
 }
 
-.redes-sociales {
+.form__container {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.form__container .btn {
+  margin-bottom: 15px;
+  padding: 0.6em 5rem;
+  margin-top: 0;
+}
+.form__container .btn:hover {
+  background-color: #99775C;
+  border-radius: 12px;
 }
 
 .input {
@@ -281,24 +322,6 @@ ul, ol {
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   border-radius: 10px;
-}
-
-.form-contenedor {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-form div .btn {
-  margin-bottom: 15px;
-  padding: 0.6em 5rem;
-  margin-top: 0;
-}
-
-form div .btn:hover {
-  background-color: #99775C;
-  border-radius: 12px;
 }
 
 /*# sourceMappingURL=styles.css.map */

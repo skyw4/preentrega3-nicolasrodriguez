@@ -1,5 +1,5 @@
 .encabezado {
-    background-image: url(../../imgs/imagen-fondo-index-header.jpg);
+    background-image: url(../imgs/imagen-fondo-index-header.jpg);
     background-color: #041f8dde;
     height: 45vh;
     background-position: center;
@@ -38,10 +38,11 @@
 }
 
 .catalogo {
-    background-image: url(../imgs/imagen-fondo-index.jpg);
-    background-color: #EAE7DD;
-    background-position: center;
-    background-size: cover;
+
+//     {background-image: url(../../imgs/imagen-fondo-index-header.jpg);
+//     background-color: #EAE7DD;
+//     background-position: center;
+//     background-size: cover;
 
     &__title {
         background-color: #EAE7DD;

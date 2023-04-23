@@ -1,72 +1,73 @@
-.contacto-titulo {
-    text-align: center;
-    padding: 25px;
+.contacto {
+    &__title {
+        text-align: center;
+        padding: 25px;
+    }
+
+    &__text {
+        text-align: center;
+        width: 80vw;
+        margin: auto;
+    }
+    
+    &__redes {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        &--card {
+            display: flex;
+            align-items: center;
+
+            height: 65px;
+            margin: 5px 0px;
+        }
+
+        &--icon {
+            background-color: #EAE7DD;
+            border-radius: 15px;
+            width: 45px;
+            height: 45px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            & i {
+                font-size: 1.2rem;
+                color: rgb(0, 0, 0);
+            }
+        }
+    }
 }
 
-.contacto-p {
-    text-align: center;
-    width: 80vw;
-    margin: auto;
-}
+    .icon__info {
+        font-size: 1rem;
+        padding: 0.5em;
+    }
 
-.icon-card {
-    display: flex;
-    align-items: center;
+    .form__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
 
-    height: 65px;
-    margin: 5px 0px;
-}
+        & .btn {
+            margin-bottom: 15px;
+            padding: .6em 5rem;
+            margin-top: 0;
+        }
 
-.icon-container {
-    background-color: #EAE7DD;
-    border-radius: 15px;
-    width: 45px;
-    height: 45px;
+        & .btn:hover {
+            background-color: #99775C;
+            border-radius: 12px;
+        }
+    }
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.icon-container i {
-    font-size: 1.2rem;
-    color: rgb(0, 0, 0);
-}
-
-.card-text {
-    font-size: 1rem;
-    padding: 0.5em;
-}
-
-.redes-sociales {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.input {
-    display: block;
-    width: 80vw;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    border-radius: 10px;
-
-}
-
-.form-contenedor {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-form div .btn {
-    margin-bottom: 15px;
-    padding: .6em 5rem;
-    margin-top: 0;
-}
-
-form div .btn:hover {
-    background-color: #99775C;
-    border-radius: 12px;
-}
+    .input {
+        display: block;
+        width: 80vw;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        border-radius: 10px;
+    }

@@ -1,8 +1,25 @@
 
 // [esta seccion incluye las secciones de "construcción" "ceramicas" Y "muebles"] //
 
-.catalogo__title--blue {
+.catalogo__title--construccion {
     background-color: #48706b;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 15px;
+    color: black;
+    width: 100%;
+}
+.catalogo__title--ceramicas {
+    background-color: #704948;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 15px;
+    color: black;
+    width: 100%;
+}
+
+.catalogo__title--muebles {
+    background-color: #614870;
     font-size: 1.8rem;
     text-align: center;
     padding: 15px;
@@ -22,6 +39,24 @@
     padding: 20px;
     width: 300px;
     background-color: #48706b;
+    border-radius: 50px;
+    border: solid 2px black;
+    margin: 20px;
+}
+
+.productos__ceramicas {
+    padding: 20px;
+    width: 300px;
+    background-color: #704948;
+    border-radius: 50px;
+    border: solid 2px black;
+    margin: 20px;
+}
+
+.productos__muebles {
+    padding: 20px;
+    width: 300px;
+    background-color: #614870;
     border-radius: 50px;
     border: solid 2px black;
     margin: 20px;
