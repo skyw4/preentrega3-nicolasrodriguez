@@ -27,14 +27,6 @@
     width: 100%;
 }
 
-// .catalogo__subtitle {
-//     font-size: 1.8rem;
-//     padding: 15px;
-//     background-color: #000000;
-//     text-align: center;
-//     color: #EAE7DD;
-// }
-
 .productos__construccion {
     padding: 20px;
     width: 300px;
@@ -60,6 +52,12 @@
     border-radius: 50px;
     border: solid 2px black;
     margin: 20px;
+}
+
+.productos__img--muebles{
+    width: 250px;
+    height: 150px;
+    border-radius: 15px;
 }
 
 .productos__body a {
