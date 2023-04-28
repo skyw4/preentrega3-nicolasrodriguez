@@ -115,7 +115,7 @@ ul, ol {
 .encabezado {
   background-image: url(../imgs/imagen-fondo-index-header.jpg);
   background-color: rgba(4, 31, 141, 0.8705882353);
-  height: 45vh;
+  height: 65vh;
   background-position: center;
   background-size: cover;
   display: flex;
@@ -161,6 +161,10 @@ ul, ol {
 .catalogo__title--index {
   background-color: #99775C;
   font-size: 1.8rem;
+  border-radius: 30px;
+  width: 90vw;
+  margin: auto;
+  margin-bottom: 5px;
 }
 .catalogo__subtitle {
   font-size: 1.8rem;
