@@ -71,3 +71,35 @@
         font-size: 1rem;
         border-radius: 10px;
     }
+
+    @media(min-width: 600px){
+        .input{
+            width: 60vw;
+        }
+    }
+
+    
+    @media(min-width: 1024px) {
+        .contacto{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-bottom: 30px;
+        }
+
+        .contacto-container{
+            grid-column: 1/2;
+        }
+
+        .form{
+            grid-column: 2/3;
+            margin-top: 40px;
+        }
+
+        .contacto__text{
+            width: 80%;
+        }
+
+        .input{
+            width: 40vw;
+        }
+    }
