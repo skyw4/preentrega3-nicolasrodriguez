@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./imgs/icono.ico" />
+    <meta name="description" content="En Corralón
+    Don Jorge tenemos todo tipo de productos y elementos de construcción, cerámicas, muebles y más. No
+    pierdas la oportunidad y contactate con nosotros!">
+    <link rel="icon" type="image/x-icon" href="./imgs/icono.ico">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Don Jorge Corralon y Ceramicas</title>
@@ -15,7 +19,7 @@
     <header class="header">
         <h1 class="header__title">Corralon Don jorge</h1>
         <div class="header__logo">
-            <a href="./index.html"><img src="./imgs/nav-header.png" alt="imagen de fondo"></a>
+            <a href="./index.html"><img src="./imgs/nav-header.png" alt="Logo de marca Don Jorge"></a>
         </div>
 
         <nav class="nav">
@@ -46,10 +50,15 @@
                 <div class="about-us__intro">
                     <h3 class="about-us__subtitle">¿Como trabajamos en Corralon Don Jorge?</h3>
                     <p class="about-us__description">
-                        En Don Jorge ofrecemos una amplia variedad de materiales de construcción de alta calidad a precios inigualables. Ya sea que estés trabajando en un proyecto de construcción a gran escala o en una pequeña renovación para el hogar, tenemos todo lo que necesitas para hacer el trabajo correctamente. Nuestro personal siempre está disponible para ayudarte a encontrar los productos perfectos para tu proyecto. Contactate con nosotros hoy y experimenta lo mejor en suministros de construcción!</p>
+                        En Don Jorge ofrecemos una amplia variedad de materiales de construcción de alta calidad a
+                        precios inigualables. Ya sea que estés trabajando en un proyecto de construcción a gran escala o
+                        en una pequeña renovación para el hogar, tenemos todo lo que necesitas para hacer el trabajo
+                        correctamente. Nuestro personal siempre está disponible para ayudarte a encontrar los productos
+                        perfectos para tu proyecto. Contactate con nosotros hoy y experimenta lo mejor en suministros de
+                        construcción!</p>
                 </div>
 
-                <div class="cards-container">
+                <div class="cards-container" data-aos="fade-right">
 
                     <div class="card">
                         <div class="card__icon">
@@ -90,8 +99,8 @@
 
                 </div>
 
-                <div class="img__container">
-                    <img class="about-us__img" src="./imgs/img-presentacion.jpg" alt="">
+                <div class="img__container" data-aos="fade-left">
+                    <img class="about-us__img" src="./imgs/img-presentacion.jpg" alt="logo Corralon y Ceramicas don Jorge, en negro y dorado">
                 </div>
 
             </article>
@@ -104,7 +113,7 @@
             <div class="catalogo__productos">
 
                 <article class="productos">
-                    <img src="./imgs/Construccion/cemento.jpg" alt="bolsa de cemento loma negra" class="productos__img">
+                    <img src="./imgs/Construccion/cemento.png" alt="bolsa de cemento loma negra" class="productos__img">
                     <div class="productos__body">
                         <h4>Bolsa de Cemento x50kg</h4>
                         <span>$1.200</span>
@@ -113,7 +122,7 @@
                 </article>
 
                 <article class="productos">
-                    <img src="./imgs/Construccion/cal.jpg" alt="bolsa de cal loma negra" class="productos__img">
+                    <img src="./imgs/Construccion/cal-cacique.png" alt="bolsa de cal cacique" class="productos__img">
                     <div class="productos__body">
                         <h4>Bolsa de Cal x30kg</h4>
                         <span>$980</span>
@@ -122,7 +131,7 @@
                 </article>
 
                 <article class="productos">
-                    <img src="./imgs/Construccion/construkor.jpg" alt="bolsa de klaukol construkor impermeable"
+                    <img src="./imgs/Construccion/cal-cacique-plus.png" alt="bolsa de cal cacique plus"
                         class="productos__img">
                     <div class="productos__body">
                         <h4>Adhesivo para Ceramicas x30kg</h4>
@@ -139,7 +148,7 @@
             <div class="catalogo__productos">
                 <div>
                     <article class="productos">
-                        <img src="./imgs/Ceramicas/ceramica-macuna-natural.jpg" alt="imagen ejemplo de ceramica 1"
+                        <img src="./imgs/Ceramicas/ceramica-macuna-natural.jpg" alt="Diseño de ceramica Macuna Natural"
                             class="productos__img">
                         <div class="productos__body">
                             <h4>Ceramica Macuna Natural</h4>
@@ -151,7 +160,7 @@
 
                 <div>
                     <article class="productos">
-                        <img src="./imgs/Ceramicas/ceramica-oxido-caspio.jpg" alt="imagen ejemplo de ceramica 2"
+                        <img src="./imgs/Ceramicas/ceramica-oxido-caspio.jpg" alt="Diseño de ceramica Oxido Caspio"
                             class="productos__img">
                         <div class="productos__body">
                             <h4>Ceramica Oxido Caspio</h4>
@@ -163,7 +172,7 @@
 
                 <div>
                     <article class="productos">
-                        <img src="./imgs/Ceramicas/ceramica-taiga-gris.jpg" alt="imagen ejemplo de ceramica 3"
+                        <img src="./imgs/Ceramicas/ceramica-taiga-gris.jpg" alt="Diseño de ceramica Taiga Gris"
                             class="productos__img">
                         <div class="productos__body">
                             <h4>Ceramica Taiga Gris</h4>
@@ -231,6 +240,13 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            delay: 100,
+            duration: 1000
+        });
+    </script>
 </body>
 
 </html>

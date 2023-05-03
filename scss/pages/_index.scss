@@ -1,6 +1,6 @@
 .encabezado {
     background-image: url(../imgs/imagen-fondo-index-header.jpg);
-    background-color: #041f8dde;
+    background-color: $color-secundario;
     height: 55vh;
     background-position: center;
     background-size: cover;
@@ -13,7 +13,7 @@
         font-size: 1.2rem;
         text-align: center;
         background-color: #0000006b;
-        color: rgb(255, 255, 255);
+        color: white;
         width: 70vw;
         border-radius: 20px;
         padding: 8px;
@@ -38,19 +38,19 @@
 }
 
 .catalogo {
-    background-color: #EAE7DD;
+    background-color: $color-secundario;
 
     &__title {
-        background-color: #EAE7DD;
+        background-color: $color-secundario;
         font-size: 2rem;
         text-align: center;
         padding: 15px;
-        color: black;
+        color: $color-principal;
         width: 100%;
 
         &--index{
             @extend .catalogo__title;
-            background-color: #99775C;
+            background-color: $color-complementario;
             font-size: 1.8rem;
             border-radius: 30px;
             width: 90vw;
@@ -62,9 +62,9 @@
     &__subtitle {
         font-size: 1.8rem;
         padding: 15px;
-        background-color: #000000;
+        background-color: $color-principal;
         text-align: center;
-        color: #EAE7DD;
+        color: $color-secundario;
     }
 
     &__productos {
@@ -79,9 +79,9 @@
     padding: 20px;
     margin: 10px;
     width: 300px;
-    background-color: #99775C;
+    background-color: $color-complementario;
     border-radius: 40px;
-    border: solid 2px black;
+    border: solid 2px $color-principal;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -103,17 +103,20 @@
 .about-us {
     font-size: 1rem;
     padding: 1em;
-    background-color: #EAE7DD;
-}
+    background-color: $color-secundario;
 
-.about-us__title {
+&__title {
     font-size: 2rem;
     padding: 0.3em;
     text-align: center;
-    background-color: #000000;
-    color: #EAE7DD;
+    background-color: $color-principal;
+    color: $color-secundario;
     border-radius: 15px;
 }
+
+}
+
+
 
 .about-us__intro{
     display: flex;
@@ -133,6 +136,7 @@
     text-align: center;
     margin-bottom: 40px;
     width: 70vw;
+    max-width: 700px;
 }
 
 /* ---- cards article about us ---- */
@@ -158,7 +162,7 @@
 
 .card__icon i {
     font-size: 1.5rem;
-    color: rgb(255, 255, 255);
+    color: $color-secundario;
 }
 
 .card__text {

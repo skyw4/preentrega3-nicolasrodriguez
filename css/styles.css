@@ -32,7 +32,7 @@ ul, ol {
   text-align: center;
   font-weight: 600;
   background-color: #EAE7DD;
-  color: black;
+  color: #000000;
   padding: 0.5rem;
 }
 .nav * {
@@ -47,7 +47,7 @@ ul, ol {
 }
 .nav a {
   padding: 0.5em 0.8em;
-  color: black;
+  color: #000000;
   position: relative;
   text-decoration: none;
   font-size: 20px;
@@ -64,20 +64,20 @@ ul, ol {
   content: "";
   right: 0;
   top: 0;
-  border-top: 3px solid black;
-  border-right: 3px solid black;
+  border-top: 3px solid #000000;
+  border-right: 3px solid #000000;
   transform: translate(-100%, 50%);
 }
 .nav a:after {
   content: "";
   left: 0;
   bottom: 0;
-  border-bottom: 3px solid black;
-  border-left: 3px solid black;
+  border-bottom: 3px solid #000000;
+  border-left: 3px solid #000000;
   transform: translate(100%, -50%);
 }
 .nav a:hover {
-  color: black;
+  color: #000000;
 }
 .nav a:hover:before, .nav a:hover:after {
   transform: translate(0, 0);
@@ -99,7 +99,7 @@ ul, ol {
   width: 10em;
   height: 2.5em;
   background: #141414;
-  color: #fff;
+  color: #EAE7DD;
   font-size: 1rem;
   font-weight: 600;
   border: none;
@@ -142,7 +142,7 @@ ul, ol {
   justify-content: center;
 }
 .container-button a {
-  color: #fff;
+  color: #EAE7DD;
 }
 
 .boton span {
@@ -171,8 +171,8 @@ ul, ol {
 }
 
 .footer__title {
-  background-color: black;
-  color: white;
+  background-color: #000000;
+  color: #EAE7DD;
   text-align: center;
   font-size: 1rem;
   padding: 0.8em;
@@ -192,7 +192,7 @@ ul, ol {
 
 .encabezado {
   background-image: url(../imgs/imagen-fondo-index-header.jpg);
-  background-color: rgba(4, 31, 141, 0.8705882353);
+  background-color: #EAE7DD;
   height: 55vh;
   background-position: center;
   background-size: cover;
@@ -205,7 +205,7 @@ ul, ol {
   font-size: 1.2rem;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.4196078431);
-  color: rgb(255, 255, 255);
+  color: white;
   width: 70vw;
   border-radius: 20px;
   padding: 8px;
@@ -233,7 +233,7 @@ ul, ol {
   font-size: 2rem;
   text-align: center;
   padding: 15px;
-  color: black;
+  color: #000000;
   width: 100%;
 }
 .catalogo__title--index {
@@ -264,7 +264,7 @@ ul, ol {
   width: 300px;
   background-color: #99775C;
   border-radius: 40px;
-  border: solid 2px black;
+  border: solid 2px #000000;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -284,7 +284,6 @@ ul, ol {
   padding: 1em;
   background-color: #EAE7DD;
 }
-
 .about-us__title {
   font-size: 2rem;
   padding: 0.3em;
@@ -312,6 +311,7 @@ ul, ol {
   text-align: center;
   margin-bottom: 40px;
   width: 70vw;
+  max-width: 700px;
 }
 
 /* ---- cards article about us ---- */
@@ -336,7 +336,7 @@ ul, ol {
 
 .card__icon i {
   font-size: 1.5rem;
-  color: rgb(255, 255, 255);
+  color: #EAE7DD;
 }
 
 .card__text {
@@ -421,16 +421,22 @@ ul, ol {
   width: 300px;
   background-color: #48706b;
   border-radius: 50px;
-  border: solid 2px black;
+  border: solid 2px #000000;
   margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.productos__construccion img {
+  width: 200px;
 }
 
 .productos__ceramicas {
   padding: 20px;
   width: 300px;
-  background-color: #704948;
+  background-color: #99775C;
   border-radius: 50px;
-  border: solid 2px black;
+  border: solid 2px #000000;
   margin: 20px;
 }
 
@@ -439,7 +445,7 @@ ul, ol {
   width: 300px;
   background-color: #614870;
   border-radius: 50px;
-  border: solid 2px black;
+  border: solid 2px #000000;
   margin: 20px;
 }
 
@@ -484,7 +490,7 @@ ul, ol {
 }
 .contacto__redes--icon i {
   font-size: 1.2rem;
-  color: rgb(0, 0, 0);
+  color: #000000;
 }
 
 .icon__info {

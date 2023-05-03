@@ -1,7 +1,7 @@
 .footer {
     &__title {
-        background-color: black;
-        color: white;
+        background-color: $color-principal;
+        color: $color-secundario;
         text-align: center;
         font-size: 1rem;
         padding: 0.8em;
@@ -12,11 +12,11 @@
         justify-content: space-evenly;
         font-size: 1.5rem;
         padding: 0.7em;
-        background-color: #EAE7DD;
-        color: #99775C;
+        background-color: $color-secundario;
+        color: $color-complementario;
     }
 }
 
 .icon:hover {
-    color: #99775C
+    color: $color-complementario;
 }

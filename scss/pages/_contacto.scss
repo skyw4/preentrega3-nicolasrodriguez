@@ -24,7 +24,7 @@
         }
 
         &--icon {
-            background-color: #EAE7DD;
+            background-color: $color-secundario;
             border-radius: 15px;
             width: 45px;
             height: 45px;
@@ -35,7 +35,7 @@
 
             & i {
                 font-size: 1.2rem;
-                color: rgb(0, 0, 0);
+                color: $color-principal;
             }
         }
     }
@@ -59,7 +59,7 @@
         }
 
         & .btn:hover {
-            background-color: #99775C;
+            background-color: $color-complementario;
             border-radius: 12px;
         }
     }
