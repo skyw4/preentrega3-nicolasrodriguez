@@ -292,19 +292,16 @@ ul, ol {
   color: #EAE7DD;
   border-radius: 15px;
 }
-
 .about-us__intro {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .about-us__subtitle {
   text-align: center;
   font-size: 1.5rem;
   padding: 0.5em 0em;
 }
-
 .about-us__description {
   font-size: 1rem;
   padding: 0.5em 0em;
@@ -323,7 +320,6 @@ ul, ol {
   padding: 10px;
   margin-bottom: 20px;
 }
-
 .card__icon {
   background-color: cadetblue;
   border-radius: 40px;
@@ -333,28 +329,24 @@ ul, ol {
   justify-content: center;
   align-items: center;
 }
-
 .card__icon i {
   font-size: 1.5rem;
   color: #EAE7DD;
 }
-
 .card__text {
   font-size: 1rem;
   padding: 0.5em;
 }
 
-.cards-container {
+.card .cards-container {
   display: flex;
   flex-direction: column;
-  gap: 15px;
 }
 
 .img__container {
   display: flex;
   justify-content: center;
 }
-
 .img__container img {
   border-radius: 5px;
   width: 70vw;

@@ -48,7 +48,7 @@
         color: $color-principal;
         width: 100%;
 
-        &--index{
+        &--index {
             @extend .catalogo__title;
             background-color: $color-complementario;
             font-size: 1.8rem;
@@ -105,38 +105,35 @@
     padding: 1em;
     background-color: $color-secundario;
 
-&__title {
-    font-size: 2rem;
-    padding: 0.3em;
-    text-align: center;
-    background-color: $color-principal;
-    color: $color-secundario;
-    border-radius: 15px;
-}
+    &__title {
+        font-size: 2rem;
+        padding: 0.3em;
+        text-align: center;
+        background-color: $color-principal;
+        color: $color-secundario;
+        border-radius: 15px;
+    }
 
-}
+    &__intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    &__subtitle {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 0.5em 0em;
+    }
 
-
-.about-us__intro{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.about-us__subtitle {
-    text-align: center;
-    font-size: 1.5rem;
-    padding: 0.5em 0em;
-}
-
-.about-us__description {
-    font-size: 1rem;
-    padding: 0.5em 0em;
-    text-align: center;
-    margin-bottom: 40px;
-    width: 70vw;
-    max-width: 700px;
+    &__description {
+        font-size: 1rem;
+        padding: 0.5em 0em;
+        text-align: center;
+        margin-bottom: 40px;
+        width: 70vw;
+        max-width: 700px;
+    }
 }
 
 /* ---- cards article about us ---- */
@@ -147,45 +144,45 @@
     margin: 5px 0px;
     padding: 10px;
     margin-bottom: 20px;
+
+    &__icon {
+        background-color: cadetblue;
+        border-radius: 40px;
+        min-width: 60px;
+        height: 60px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & i {
+            font-size: 1.5rem;
+            color: $color-secundario;
+        }
+    }
+
+    &__text {
+        font-size: 1rem;
+        padding: 0.5em;
+    }
 }
 
-.card__icon {
-    background-color: cadetblue;
-    border-radius: 40px;
-    min-width: 60px;
-    height: 60px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.card__icon i {
-    font-size: 1.5rem;
-    color: $color-secundario;
-}
-
-.card__text {
-    font-size: 1rem;
-    padding: 0.5em;
-}
-
-.cards-container{
+.card .cards-container {
     display: flex;
     flex-direction: column;
-    gap:15px
 }
 
 .img__container {
     display: flex;
     justify-content: center;
-}
 
-.img__container img {
+    & img {
     border-radius: 5px;
     width: 70vw;
-
 }
+}
+
 
 .about-us__img {
     width: 100%;
