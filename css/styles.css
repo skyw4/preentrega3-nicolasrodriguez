@@ -15,19 +15,34 @@ ul, ol {
   list-style: none;
 }
 
-.header__logo {
-  display: flex;
-  justify-content: center;
+.header {
+  background-color: #EAE7DD;
 }
-.header__logo img {
-  width: 100%;
-}
-
 .header__title {
-  display: none;
+  font-family: "Ultra", serif;
+  text-align: center;
+  font-size: 2.5rem;
+  padding-top: 10px;
+}
+.header__subtitle {
+  font-family: "Pathway Extreme", sans-serif;
+  text-align: center;
+  font-size: 0.8rem;
+  letter-spacing: 0.4rem;
+  font-weight: 100;
+  padding-bottom: 10px;
 }
 
-.nav {
+@media (min-width: 600px) {
+  .header__title {
+    font-size: 4.6rem;
+  }
+  .header__subtitle {
+    font-size: 1.2rem;
+    letter-spacing: 0.8rem;
+  }
+}
+.header .nav {
   text-transform: uppercase;
   text-align: center;
   font-weight: 600;
@@ -35,24 +50,24 @@ ul, ol {
   color: #000000;
   padding: 0.5rem;
 }
-.nav * {
+.header .nav * {
   box-sizing: border-box;
   transition: all 0.35s ease;
 }
-.nav li {
+.header .nav li {
   display: inline-block;
   list-style: outside none none;
   margin: 0.5em 1em;
   padding: 0;
 }
-.nav a {
+.header .nav a {
   padding: 0.5em 0.8em;
   color: #000000;
   position: relative;
   text-decoration: none;
   font-size: 20px;
 }
-.nav a::before, .nav a::after {
+.header .nav a::before, .header .nav a::after {
   content: "";
   height: 14px;
   width: 14px;
@@ -60,7 +75,7 @@ ul, ol {
   transition: all 0.35s ease;
   opacity: 0;
 }
-.nav a::before {
+.header .nav a::before {
   content: "";
   right: 0;
   top: 0;
@@ -68,7 +83,7 @@ ul, ol {
   border-right: 3px solid #000000;
   transform: translate(-100%, 50%);
 }
-.nav a:after {
+.header .nav a:after {
   content: "";
   left: 0;
   bottom: 0;
@@ -76,10 +91,10 @@ ul, ol {
   border-left: 3px solid #000000;
   transform: translate(100%, -50%);
 }
-.nav a:hover {
+.header .nav a:hover {
   color: #000000;
 }
-.nav a:hover:before, .nav a:hover:after {
+.header .nav a:hover:before, .header .nav a:hover:after {
   transform: translate(0, 0);
   opacity: 1;
 }
@@ -381,6 +396,28 @@ ul, ol {
     border-radius: 5px;
   }
 }
+.catalogo__description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.catalogo__description--text {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 25px;
+}
+.catalogo__description--title {
+  font-size: 1.5rem;
+  padding: 10px;
+}
+.catalogo__description--img {
+  max-width: 70vw;
+  border-radius: 15px;
+  margin-top: 10px;
+}
 .catalogo__title--construccion {
   background-color: #48706b;
   font-size: 1.8rem;
@@ -389,16 +426,16 @@ ul, ol {
   color: black;
   width: 100%;
 }
-
 .catalogo__title--ceramicas {
-  background-color: #704948;
+  background: #757F9A;
+  background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A);
+  background: linear-gradient(to right, #D7DDE8, #757F9A);
   font-size: 1.8rem;
   text-align: center;
   padding: 15px;
   color: black;
   width: 100%;
 }
-
 .catalogo__title--muebles {
   background-color: #614870;
   font-size: 1.8rem;
@@ -408,6 +445,41 @@ ul, ol {
   width: 100%;
 }
 
+@media (min-width: 600px) {
+  .catalogo__description {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: auto;
+  }
+  .catalogo__description--text {
+    grid-column: 1/2;
+  }
+  .catalogo__description--img {
+    grid-column: 2/3;
+    width: 45vw;
+    margin-right: 20px;
+  }
+}
+@media (min-width: 750px) {
+  .catalogo__description--text {
+    max-width: 340px;
+  }
+  .catalogo__description--img {
+    max-width: 350px;
+  }
+}
+@media (min-width: 1024px) {
+  .catalogo__description {
+    margin-top: 25px;
+    margin-bottom: 40px;
+  }
+  .catalogo__description--text {
+    min-width: 40vw;
+  }
+  .catalogo__description--img {
+    min-width: 30vw;
+  }
+}
 .productos__construccion {
   padding: 20px;
   width: 300px;
@@ -426,7 +498,9 @@ ul, ol {
 .productos__ceramicas {
   padding: 20px;
   width: 300px;
-  background-color: #99775C;
+  background: #757F9A; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #D7DDE8, #757F9A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border-radius: 50px;
   border: solid 2px #000000;
   margin: 20px;

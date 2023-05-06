@@ -5,7 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Encuentra el mueble de baño perfecto para complementar el estilo de tu hogar en Don Jorge. Ofrecemos una amplia variedad de muebles de baño de alta calidad, diseñados para satisfacer tus necesidades y durar muchos años. Descubre nuestra selección de tocadores, espejos, gabinetes y estantes para crear el baño que mas te guste">
+    <meta name="description"
+        content="Encuentra el mueble de baño perfecto para complementar el estilo de tu hogar en Don Jorge. Ofrecemos una amplia variedad de muebles de baño de alta calidad, diseñados para satisfacer tus necesidades y durar muchos años. Descubre nuestra selección de tocadores, espejos, gabinetes y estantes para crear el baño que mas te guste">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@200&family=Ultra&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" type="image/x-icon" href="../imgs/icono.ico">
@@ -14,10 +20,8 @@
 
 <body>
     <header class="header">
-        <h1 class="header__title">Corralon Don jorge</h1>
-        <div class="header__logo">
-            <a href="../index.html"><img src="../imgs/nav-header.png" alt="imagen de fondo"></a>
-        </div>
+        <h1 class="header__title">DON JORGE</h1>
+        <h2 class="header__subtitle">CORRALON Y CERAMICAS</h2>
 
         <nav class="nav">
             <ul class="nav__list">
@@ -39,7 +43,7 @@
 
             <div class="catalogo__productos">
                 <div>
-                    <article class="productos__muebles">
+                    <article class="productos__muebles" data-aos="flip-up">
                         <img src="../imgs/Muebles/mueble1.jpg" alt="mueble de baño color madera"
                             class="productos__img--muebles">
                         <div class="productos__body">
@@ -53,7 +57,7 @@
                 </div>
 
                 <div>
-                    <article class="productos__muebles">
+                    <article class="productos__muebles" data-aos="flip-up">
                         <img src="../imgs/Muebles/mueble2.jpg" alt="mueble de baño color madera"
                             class="productos__img--muebles">
                         <div class="productos__body">
@@ -67,7 +71,7 @@
                 </div>
 
                 <div>
-                    <article class="productos__muebles">
+                    <article class="productos__muebles" data-aos="flip-up">
                         <img src="../imgs/Muebles/mueble3.jpg" alt="mueble de baño color madera"
                             class="productos__img--muebles">
                         <div class="productos__body">
@@ -81,8 +85,9 @@
                 </div>
 
                 <div>
-                    <article class="productos__muebles">
-                        <img src="../imgs/Muebles/mueble4.jpg" alt="mueble de baño color madera con cajonera" class="productos__img--muebles">
+                    <article class="productos__muebles" data-aos="flip-up">
+                        <img src="../imgs/Muebles/mueble4.jpg" alt="mueble de baño color madera con cajonera"
+                            class="productos__img--muebles">
                         <div class="productos__body">
                             <h4>Mueble de baño con cajonera</h4>
                             <span> $20.400 </span>
@@ -93,8 +98,9 @@
                 </div>
 
                 <div>
-                    <article class="productos__muebles">
-                        <img src="../imgs/Muebles/mueble5.jpg" alt="mueble blanco y madera simple" class="productos__img--muebles">
+                    <article class="productos__muebles" data-aos="flip-up">
+                        <img src="../imgs/Muebles/mueble5.jpg" alt="mueble blanco y madera simple"
+                            class="productos__img--muebles">
                         <div class="productos__body">
                             <h4>Mueble de baño madera</h4>
                             <span> $18.700 </span>
@@ -105,8 +111,9 @@
                 </div>
 
                 <div>
-                    <article class="productos__muebles">
-                        <img src="../imgs/Muebles/mueble6.jpg" alt="mueble madera con apoyador de toallas" class="productos__img--muebles">
+                    <article class="productos__muebles" data-aos="flip-up">
+                        <img src="../imgs/Muebles/mueble6.jpg" alt="mueble madera con apoyador de toallas"
+                            class="productos__img--muebles">
                         <div class="productos__body">
                             <h4>Mueble de baño grande</h4>
                             <span> $26.900 </span>
@@ -131,6 +138,10 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

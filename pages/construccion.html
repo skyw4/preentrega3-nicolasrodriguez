@@ -5,7 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explora nuestro amplio catálogo de suministros de construcción de alta calidad en Don Jorge. Ofrecemos una gran variedad de productos para todo tipo de proyectos de construcción, desde grandes obras hasta pequeñas renovaciones">
+    <meta name="description"
+        content="Explora nuestro amplio catálogo de suministros de construcción de alta calidad en Don Jorge. Ofrecemos una gran variedad de productos para todo tipo de proyectos de construcción, desde grandes obras hasta pequeñas renovaciones">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@200&family=Ultra&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" type="image/x-icon" href="../imgs/icono.ico">
@@ -14,10 +20,8 @@
 
 <body>
     <header class="header">
-        <h1 class="header__title">Corralon Don jorge</h1>
-        <div class="header__logo">
-            <a href="../index.html"><img src="../imgs/nav-header.png" alt="imagen de fondo"></a>
-        </div>
+        <h1 class="header__title">DON JORGE</h1>
+        <h2 class="header__subtitle">CORRALON Y CERAMICAS</h2>
 
         <nav class="nav">
             <ul class="nav__list">
@@ -34,6 +38,21 @@
         <section class="catalogo">
             <h2 class="catalogo__title--construccion">Catálogo | Construcción</h2>
             <h3 class="catalogo__subtitle">Materiales de Construcción</h3>
+
+            <div class="catalogo__description" data-aos="fade-right" data-aos-delay="100"
+            data-aos-duration="1500">
+                <div class="catalogo__description--text">
+                    <h4 class="catalogo__description--title">¡Nuestro Catalogo De Construcción!</h4>
+                    <p>Descubre nuestro amplio catálogo de materiales de
+                        construcción para llevar a cabo los proyectos de tu obra. Desde cementos y ladrillos hasta
+                        productos de aislamiento térmico y acústico, contamos con todo lo que necesitas para hacer
+                        realidad tus ideas de construcción.
+                    </p>
+                </div>
+                <img src="../imgs/seccion-construccion.png" alt="" class="catalogo__description--img">
+            </div>
+
+            <hr>
 
             <div class="catalogo__productos">
                 <article class="productos__construccion">
@@ -82,7 +101,8 @@
                 </article>
 
                 <article class="productos__construccion">
-                    <img src="../imgs/Construccion/cemento-sanmartin.png" alt="bolsa de cemento san martin" class="productos__img">
+                    <img src="../imgs/Construccion/cemento-sanmartin.png" alt="bolsa de cemento san martin"
+                        class="productos__img">
                     <div class="productos__body">
                         <h4>Cemento San Martin x50kg</h4>
                         <span>$1.600</span>
@@ -116,6 +136,10 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

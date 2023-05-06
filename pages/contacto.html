@@ -5,7 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="¿Necesitas ayuda o tienes alguna pregunta? ¡Contáctanos! En Don Jorge estamos siempre disponibles para brindarte asesoramiento y resolver tus dudas. Completa nuestro formulario de contacto o visítanos en nuestra tienda física. Nos encantaría escucharte y ayudarte a encontrar lo que necesitas para tus proyectos de construcción y renovación.">
+    <meta name="description"
+        content="¿Necesitas ayuda o tienes alguna pregunta? ¡Contáctanos! En Don Jorge estamos siempre disponibles para brindarte asesoramiento y resolver tus dudas. Completa nuestro formulario de contacto o visítanos en nuestra tienda física. Nos encantaría escucharte y ayudarte a encontrar lo que necesitas para tus proyectos de construcción y renovación.">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@200&family=Ultra&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" type="image/x-icon" href="../imgs/icono.ico">
@@ -14,10 +20,8 @@
 
 <body>
     <header class="header">
-        <h1 class="header__title">Corralon Don jorge</h1>
-        <div class="header__logo">
-            <a href="../index.html"><img src="../imgs/nav-header.png" alt="Logo de marca Don Jorge"></a>
-        </div>
+        <h1 class="header__title">DON JORGE</h1>
+        <h2 class="header__subtitle">CORRALON Y CERAMICAS</h2>>
 
         <nav class="nav">
             <ul class="nav__list">
@@ -32,12 +36,14 @@
 
     <main>
         <div class="contacto">
-            <section class="info">
+            <section class="info" data-aos="flip-right">
                 <h2 class="contacto__title">Pedir Cotizacion</h2>
 
                 <div class="contacto__container">
                     <div>
-                        <p class="contacto__text"> Necesitas pedir una cotizacion? Consultar precios o disponibilidad de alguno de nuestros productos en nuestro catalogo? Queres realizar un pedido? No dudes en contactarte con nosotros!</p>
+                        <p class="contacto__text"> Necesitas pedir una cotizacion? Consultar precios o disponibilidad de
+                            alguno de nuestros productos en nuestro catalogo? Queres realizar un pedido? No dudes en
+                            contactarte con nosotros!</p>
                     </div>
                     <div class="contacto__redes">
                         <div class="contacto__redes--card">
@@ -73,26 +79,38 @@
                 </div>
             </section>
 
-            <section class="form">
-                <form action="">
+            <section class="form" data-aos="flip-left">
+                <form id="fs-frm" name="complaint-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}"
+                    method="post">
                     <div class="form__container">
+                    <div id="fs-frm-inputs">
                         <div class="contenedor-input">
-                            <input class="input" type="text" placeholder="Nombre" required="">
+                        <label for="full-name">Nombre Completo</label>
+                        <input type="text" class="input" name="name" id="full-name" placeholder="Nombre y Apellido" required="">
                         </div>
                         <div class="contenedor-input">
-                            <input class="input" type="tel" placeholder="Numero de Telefono" required="">
+                        <label for="email-address">Correo Electronico</label>sa
+                        <input type="email" class="input" name="_replyto" id="email-address" placeholder="ejemplo@email.com"
+                            required="">
                         </div>
                         <div class="contenedor-input">
-                            <textarea class="input"
-                                placeholder="Quisiera obtener información acerca de la disponibilidad y las tarifas. Necesito ayuda con lo siguiente:"
-                                cols="30" rows="7"></textarea>
+                        <label for="telephone">Numero de Telefono</label>
+                        <input type="telephone" class="input" name="telephone" id="telephone" placeholder="(+54) 115555-5555">
                         </div>
-                        <button class="btn" type="submit">Enviar</button>
+                        <div class="contenedor-input">
+                        <label for="complaint">Mensaje</label>
+                        <textarea rows="6" name="complaint" class="input" id="complaint"
+                            placeholder="Quisiera obtener información acerca de la disponibilidad y las tarifas. Necesito ayuda con lo siguiente:"
+                            required=""></textarea>
+                        </div>
+                        <input type="hidden"  class="input" name="_subject" id="email-subject" value="Complaint Form Submission">
                     </div>
-                </form>
+                    <input type="submit" class="boton" value="Enviar">
+                </div>
+            </form>
             </section>
 
-        </div>
+        </div>complaint
 
     </main>
 
@@ -106,6 +124,13 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            delay: 100,
+            duration: 800,
+        });
+    </script>
 </body>
 
 </html>
