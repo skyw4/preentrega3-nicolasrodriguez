@@ -1,40 +1,4 @@
-.header {
-    background-color: $color-secundario;
-
-&__title {
-    font-family: 'Ultra', serif;
-    text-align: center;
-    font-size: 2.5rem;
-    padding-top: 10px;
-    
-}
-
-&__subtitle{
-    font-family: 'Pathway Extreme', sans-serif;
-    text-align: center;
-    font-size: .8rem;
-    letter-spacing: .4rem;
-    font-weight: 100;
-    padding-bottom: 10px;
-}
-}
-
-@media (min-width:600px){
-
-.header{
-    &__title {
-        font-size: 4.6rem;
-    }
-    
-    &__subtitle{
-        font-size: 1.2rem;
-        letter-spacing: 0.8rem;
-    }
-    }
-}
-
-
-.nav {
+.nav--recom {
     text-transform: uppercase;
     text-align: center;
     font-weight: 600;
@@ -101,3 +65,41 @@
         }
     }
 }
+
+.contenedor {
+    width: 60%;
+    margin: 30px;
+}
+
+
+.recomendaciones__title{
+        font-size: 2rem;
+        text-align: center;
+        padding: 15px;
+        color: $color-principal;
+        width: 100%;
+    }
+
+
+.footer--recom {
+        &__title {
+            background-color: $color-principal;
+            color: $color-secundario;
+            text-align: center;
+            font-size: 1rem;
+            padding: 0.8em;
+        }
+    
+        &__body {
+            display: flex;
+            justify-content: space-evenly;
+            font-size: 1.5rem;
+            padding: 0.7em;
+            background-color: $color-secundario;
+            color: $color-complementario;
+        }
+    }
+    
+    .icon:hover {
+        color: $color-complementario;
+    }

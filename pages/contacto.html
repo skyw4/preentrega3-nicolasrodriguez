@@ -83,31 +83,34 @@
                 <form id="fs-frm" name="complaint-form" accept-charset="utf-8" action="https://formspree.io/f/xlekzagn"
                     method="post">
                     <div class="form__container">
-                    <div id="fs-frm-inputs">
-                        <div class="contenedor-input">
-                        <label for="full-name">Nombre Completo</label>
-                        <input type="text" class="input" name="name" id="full-name" placeholder="Nombre y Apellido" required="">
+                        <div id="fs-frm-inputs">
+                            <div class="contenedor-input">
+                                <label for="full-name">Nombre Completo</label>
+                                <input type="text" class="input" name="name" id="full-name"
+                                    placeholder="Nombre y Apellido" required="">
+                            </div>
+                            <div class="contenedor-input">
+                                <label for="email-address">Correo Electronico</label>
+                                <input type="email" class="input" name="_replyto" id="email-address"
+                                    placeholder="ejemplo@email.com" required="">
+                            </div>
+                            <div class="contenedor-input">
+                                <label for="telephone">Numero de Telefono</label>
+                                <input type="telephone" class="input" name="telephone" id="telephone"
+                                    placeholder="(+54) 115555-5555">
+                            </div>
+                            <div class="contenedor-input">
+                                <label for="complaint">Mensaje</label>
+                                <textarea rows="6" name="complaint" class="input" id="complaint"
+                                    placeholder="Quisiera obtener información acerca de la disponibilidad y las tarifas. Necesito ayuda con lo siguiente:"
+                                    required=""></textarea>
+                            </div>
+                            <input type="hidden" class="input" name="_subject" id="email-subject"
+                                value="Complaint Form Submission">
                         </div>
-                        <div class="contenedor-input">
-                        <label for="email-address">Correo Electronico</label>
-                        <input type="email" class="input" name="_replyto" id="email-address" placeholder="ejemplo@email.com"
-                            required="">
-                        </div>
-                        <div class="contenedor-input">
-                        <label for="telephone">Numero de Telefono</label>
-                        <input type="telephone" class="input" name="telephone" id="telephone" placeholder="(+54) 115555-5555">
-                        </div>
-                        <div class="contenedor-input">
-                        <label for="complaint">Mensaje</label>
-                        <textarea rows="6" name="complaint" class="input" id="complaint"
-                            placeholder="Quisiera obtener información acerca de la disponibilidad y las tarifas. Necesito ayuda con lo siguiente:"
-                            required=""></textarea>
-                        </div>
-                        <input type="hidden"  class="input" name="_subject" id="email-subject" value="Complaint Form Submission">
+                            <input type="submit" class="boton" value="Enviar">
                     </div>
-                    <input type="submit" class="boton" value="Enviar">
-                </div>
-            </form>
+                </form>
             </section>
 
         </div>

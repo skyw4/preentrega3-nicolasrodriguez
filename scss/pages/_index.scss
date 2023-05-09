@@ -1,5 +1,5 @@
 .encabezado {
-    background-image: url(../imgs/imagen-fondo-index-header.jpg);
+    background-image: url(../imgs/bg-index-header.jpg);
     background-color: $color-secundario;
     height: 55vh;
     background-position: center;
@@ -104,6 +104,7 @@
     font-size: 1rem;
     padding: 1em;
     background-color: $color-secundario;
+    overflow-x: hidden;
 
     &__title {
         font-size: 2rem;

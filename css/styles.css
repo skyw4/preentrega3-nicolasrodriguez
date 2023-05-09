@@ -42,7 +42,7 @@ ul, ol {
     letter-spacing: 0.8rem;
   }
 }
-.header .nav {
+.nav {
   text-transform: uppercase;
   text-align: center;
   font-weight: 600;
@@ -50,24 +50,24 @@ ul, ol {
   color: #000000;
   padding: 0.5rem;
 }
-.header .nav * {
+.nav * {
   box-sizing: border-box;
   transition: all 0.35s ease;
 }
-.header .nav li {
+.nav li {
   display: inline-block;
   list-style: outside none none;
   margin: 0.5em 1em;
   padding: 0;
 }
-.header .nav a {
+.nav a {
   padding: 0.5em 0.8em;
   color: #000000;
   position: relative;
   text-decoration: none;
   font-size: 20px;
 }
-.header .nav a::before, .header .nav a::after {
+.nav a::before, .nav a::after {
   content: "";
   height: 14px;
   width: 14px;
@@ -75,7 +75,7 @@ ul, ol {
   transition: all 0.35s ease;
   opacity: 0;
 }
-.header .nav a::before {
+.nav a::before {
   content: "";
   right: 0;
   top: 0;
@@ -83,7 +83,7 @@ ul, ol {
   border-right: 3px solid #000000;
   transform: translate(-100%, 50%);
 }
-.header .nav a:after {
+.nav a:after {
   content: "";
   left: 0;
   bottom: 0;
@@ -91,10 +91,10 @@ ul, ol {
   border-left: 3px solid #000000;
   transform: translate(100%, -50%);
 }
-.header .nav a:hover {
+.nav a:hover {
   color: #000000;
 }
-.header .nav a:hover:before, .header .nav a:hover:after {
+.nav a:hover:before, .nav a:hover:after {
   transform: translate(0, 0);
   opacity: 1;
 }
@@ -206,7 +206,7 @@ ul, ol {
 }
 
 .encabezado {
-  background-image: url(../imgs/imagen-fondo-index-header.jpg);
+  background-image: url(../imgs/bg-index-header.jpg);
   background-color: #EAE7DD;
   height: 55vh;
   background-position: center;
@@ -298,6 +298,7 @@ ul, ol {
   font-size: 1rem;
   padding: 1em;
   background-color: #EAE7DD;
+  overflow-x: hidden;
 }
 .about-us__title {
   font-size: 2rem;
@@ -482,9 +483,10 @@ ul, ol {
 }
 .productos__construccion {
   padding: 20px;
-  width: 300px;
-  background-color: #48706b;
-  border-radius: 50px;
+  width: 280px;
+  background-color: rgba(46, 67, 71, 0.6039215686);
+  box-shadow: 2px 2px #EAE7DD, 4px 4px rgb(0, 0, 0), 6px 6px #4c696e, 8px 8px rgb(0, 0, 0);
+  border-radius: 30px;
   border: solid 2px #000000;
   margin: 20px;
   display: flex;
@@ -495,15 +497,21 @@ ul, ol {
   width: 200px;
 }
 
+.productos__construccion:hover {
+  transition: 0.2s ease-in-out all;
+  box-shadow: none;
+}
+
 .productos__ceramicas {
   padding: 20px;
   width: 300px;
-  background: #757F9A; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #D7DDE8, #757F9A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  border-radius: 50px;
+  background-color: rgba(23, 4, 34, 0.8);
+  border-radius: 40px;
   border: solid 2px #000000;
   margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .productos__muebles {
@@ -612,6 +620,79 @@ ul, ol {
   .input {
     width: 40vw;
   }
+}
+.nav--recom {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  background-color: #EAE7DD;
+  color: #000000;
+  padding: 0.5rem;
+}
+.nav--recom * {
+  box-sizing: border-box;
+  transition: all 0.35s ease;
+}
+.nav--recom li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0.5em 1em;
+  padding: 0;
+}
+.nav--recom a {
+  padding: 0.5em 0.8em;
+  color: #000000;
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+}
+.nav--recom a::before, .nav--recom a::after {
+  content: "";
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  transition: all 0.35s ease;
+  opacity: 0;
+}
+.nav--recom a::before {
+  content: "";
+  right: 0;
+  top: 0;
+  border-top: 3px solid #000000;
+  border-right: 3px solid #000000;
+  transform: translate(-100%, 50%);
+}
+.nav--recom a:after {
+  content: "";
+  left: 0;
+  bottom: 0;
+  border-bottom: 3px solid #000000;
+  border-left: 3px solid #000000;
+  transform: translate(100%, -50%);
+}
+.nav--recom a:hover {
+  color: #000000;
+}
+.nav--recom a:hover:before, .nav--recom a:hover:after {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.contenedor {
+  width: 60%;
+  margin: 30px;
+}
+
+.recomendaciones {
+  background-color: #EAE7DD;
+}
+.recomendaciones__title {
+  background-color: #99775C;
+  font-size: 2rem;
+  text-align: center;
+  padding: 15px;
+  color: #000000;
+  width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */
