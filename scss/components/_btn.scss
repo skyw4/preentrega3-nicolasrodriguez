@@ -91,3 +91,16 @@
     left: 0;
     transition: .4s ease-in-out all;
 }
+
+.btn-contacto:hover{
+    background-color: #694d38;
+    color: #fff;
+    border: solid black 4px;
+    transition: .3s all ease-in-out;
+}
+
+@media(max-width: 1024px){
+    .btn-contacto{
+    margin-bottom: 10px;
+}
+}
