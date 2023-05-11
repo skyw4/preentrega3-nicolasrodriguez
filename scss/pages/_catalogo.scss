@@ -6,7 +6,8 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin-bottom: 15px;
+        margin-bottom: 30px;
+
 
         &--text {
             text-align: center;
@@ -45,6 +46,7 @@
         padding: 15px;
         color: black;
         width: 100%;
+
     }
 
     &__title--muebles {
@@ -108,7 +110,6 @@
     padding: 20px;
     width: 280px;
     background-color: #2e43479a;
-    box-shadow: 2px 2px $color-secundario, 4px 4px rgb(0, 0, 0), 6px 6px #4c696e, 8px 8px rgb(0, 0, 0);
     border-radius: 30px;
     border: solid 2px $color-principal;
     margin: 20px;
@@ -123,7 +124,7 @@
 
 .productos__construccion:hover{
     transition: .2s ease-in-out all;
-    box-shadow: none;
+    box-shadow: 2px 2px $color-secundario, 4px 4px rgb(0, 0, 0), 6px 6px #4c696e, 8px 8px rgb(0, 0, 0);
 }
 
 
@@ -134,9 +135,18 @@
     border-radius: 40px;
     border: solid 2px $color-principal;
     margin: 20px;
+    color: #bcc4da;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    & a:hover{
+        color: #bcc4da;
+    }
+
+    & img{
+        border: solid 2px;
+    }
 }
 
 .productos__muebles {

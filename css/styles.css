@@ -217,27 +217,6 @@ ul, ol {
   color: #99775C;
 }
 
-.footer-recomendaciones__title {
-  background-color: #000000;
-  color: #EAE7DD;
-  text-align: center;
-  font-size: 1rem;
-  padding: 0.8em;
-  margin: 0;
-}
-.footer-recomendaciones__body {
-  display: flex;
-  justify-content: space-evenly;
-  font-size: 1.5rem;
-  padding: 0.7em;
-  background-color: #EAE7DD;
-  color: #99775C;
-}
-
-.icon:hover {
-  color: #99775C;
-}
-
 .encabezado {
   background-image: url(../imgs/bg-index-header.jpg);
   background-color: #EAE7DD;
@@ -435,7 +414,7 @@ ul, ol {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 .catalogo__description--text {
   text-align: center;
@@ -518,7 +497,6 @@ ul, ol {
   padding: 20px;
   width: 280px;
   background-color: rgba(46, 67, 71, 0.6039215686);
-  box-shadow: 2px 2px #EAE7DD, 4px 4px rgb(0, 0, 0), 6px 6px #4c696e, 8px 8px rgb(0, 0, 0);
   border-radius: 30px;
   border: solid 2px #000000;
   margin: 20px;
@@ -532,7 +510,7 @@ ul, ol {
 
 .productos__construccion:hover {
   transition: 0.2s ease-in-out all;
-  box-shadow: none;
+  box-shadow: 2px 2px #EAE7DD, 4px 4px rgb(0, 0, 0), 6px 6px #4c696e, 8px 8px rgb(0, 0, 0);
 }
 
 .productos__ceramicas {
@@ -542,9 +520,16 @@ ul, ol {
   border-radius: 40px;
   border: solid 2px #000000;
   margin: 20px;
+  color: #bcc4da;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.productos__ceramicas a:hover {
+  color: #bcc4da;
+}
+.productos__ceramicas img {
+  border: solid 2px;
 }
 
 .productos__muebles {
@@ -667,53 +652,69 @@ ul, ol {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow-x: hidden;
+}
+.recomendaciones__container .imagen-edificio {
+  display: flex;
+  justify-content: center;
 }
 .recomendaciones__intro {
-  padding: 40px 40px 15px 40px;
+  padding: 30px;
   font-weight: 600;
   text-align: center;
 }
-
-.acordeon {
-  width: 350px;
-  background-color: #EAE7DD;
-  border-radius: 30px;
-  border: solid 2px rgb(17, 17, 17);
-  overflow: hidden;
+.recomendaciones__intro--text ol {
+  list-style: decimal;
+}
+.recomendaciones__intro--title, .recomendaciones__text--title {
+  font-size: 1.2em;
+  color: rgb(86, 112, 226);
+}
+.recomendaciones__img {
+  margin-bottom: 30px;
+}
+.recomendaciones__img img {
+  width: 75vw;
+  max-width: 550px;
+}
+.recomendaciones__text {
+  text-align: center;
+  font-weight: 500;
+  padding: 30px;
+}
+.recomendaciones__text--title {
   margin-bottom: 20px;
 }
-.acordeon__title {
-  text-align: center;
-  padding: 15px 30px;
-}
-.acordeon__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
+.span-negrita {
+  font-weight: bold;
+  color: rgb(214, 80, 120);
 }
 
-.acordeon__item p {
-  overflow: hidden;
-  max-height: 0;
-  text-align: justify;
-  background-color: #EAE7DD;
-  color: #000000;
-  transition: 0.4s ease all;
+.span-azul {
+  font-weight: bold;
+  color: rgb(86, 112, 226);
 }
 
-.acordeon__item a {
-  display: block;
-  text-align: left;
-  padding: 15px;
-  background-color: rgb(17, 17, 17);
-  color: #EAE7DD;
-  border-bottom: 2px solid #EAE7DD;
-}
-
-.acordeon__item:target p {
-  max-height: 120px;
-  padding: 10px;
+@media (min-width: 1024px) {
+  .recomendaciones__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  .recomendaciones__intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .recomendaciones__intro--text {
+    width: 35vw;
+  }
+  .recomendaciones__img img {
+    width: 40vw;
+    padding: 30px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
