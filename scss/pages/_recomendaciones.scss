@@ -16,7 +16,7 @@
         justify-content: center;
         overflow-x: hidden;
 
-        & .imagen-edificio{
+        & .img-edificio {
             display: flex;
             justify-content: center;
         }
@@ -27,8 +27,8 @@
         font-weight: 600;
         text-align: center;
 
-        &--text ol{
-                list-style: decimal;
+        &--text ol {
+            list-style: decimal;
         }
 
         &--title {
@@ -39,30 +39,31 @@
 
     &__img {
         margin-bottom: 30px;
+
         & img {
             width: 75vw;
             max-width: 550px;
         }
     }
 
-    &__text{
+    &__text {
         text-align: center;
         font-weight: 500;
         padding: 30px;
 
-        &--title{
-        @extend .recomendaciones__intro--title;
-        margin-bottom: 20px;
-    }
+        &--title {
+            @extend .recomendaciones__intro--title;
+            margin-bottom: 20px;
+        }
     }
 }
 
-.span-negrita{
+.span-negrita {
     font-weight: bold;
     color: rgb(214, 80, 120);
 }
 
-.span-azul{
+.span-azul {
     font-weight: bold;
     color: rgb(86, 112, 226);
 }
@@ -76,21 +77,53 @@
             grid-template-rows: auto;
         }
 
+        &__text{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            font-weight: 600;
+        }
+
         &__intro {
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 20px;
 
+            &--title {
+                max-width: 400px;
+            }
+
             &--text {
-                width: 35vw;
+                max-width: 450px;
+                font-size: 1.2em;
             }
         }
 
-
         &__img img {
-            width: 40vw;
-            padding: 30px;
+            width: 45vw;
+            padding: 25px;
+            margin-top: 25px;
         }
+    }
+
+    .recomendaciones__text--title{
+        max-width: 500px;
+        
+    }
+
+    .img-edificio {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+
+    .refacciones-text {
+        width: 40vw;
+    }
+
+    .espacios-text{
+        grid-column: 1/3;
+        max-width: 700px;
+        margin: auto;
     }
 }
