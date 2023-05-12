@@ -120,9 +120,45 @@
     }
 }
 
-.productos__construccion:hover{
+.productos__construccion:hover {
     transition: .2s ease-in-out all;
     box-shadow: 2px 2px $color-secundario, 4px 4px rgb(0, 0, 0), 6px 6px #4c696e, 8px 8px rgb(0, 0, 0);
+}
+
+.galeria {
+    &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $color-secundario;
+    }
+
+    &__description {
+        font-size: 1.2em;
+        font-weight: 700;
+        text-align: center;
+        width: 85vw;
+        max-width: 650px;
+        padding: 20px;
+        color: rgb(0, 0, 0);
+    }
+
+    &__img img {
+        flex: 1 0 auto;
+        margin: 0 30px;
+        background-color: red;
+        width: 300px;
+        height: 250px;
+        border-radius: 8px;
+    }
+
+    &-ceramicas {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        background-color: $color-secundario;
+        padding-top: 30px;
+    }
 }
 
 
@@ -138,11 +174,11 @@
     flex-direction: column;
     align-items: center;
 
-    & a:hover{
+    & a:hover {
         color: #bcc4da;
     }
 
-    & img{
+    & img {
         border: solid 2px;
     }
 }
